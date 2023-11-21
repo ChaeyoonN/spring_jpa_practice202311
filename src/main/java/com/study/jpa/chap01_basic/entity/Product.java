@@ -1,4 +1,4 @@
-package com.study.jpa.chapter01_basic.entity;
+package com.study.jpa.chap01_basic.entity;
 
 import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;

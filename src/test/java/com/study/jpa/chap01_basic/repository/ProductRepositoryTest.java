@@ -1,6 +1,6 @@
-package com.study.jpa.chapter01_basic.repository;
+package com.study.jpa.chap01_basic.repository;
 
-import com.study.jpa.chapter01_basic.entity.Product;
+import com.study.jpa.chap01_basic.entity.Product;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -12,7 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 import java.util.Optional;
 
-import static com.study.jpa.chapter01_basic.entity.Product.Category.*;
+import static com.study.jpa.chap01_basic.entity.Product.Category.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
