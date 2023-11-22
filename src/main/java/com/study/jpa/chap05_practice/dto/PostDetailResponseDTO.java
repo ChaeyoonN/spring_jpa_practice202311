@@ -1,7 +1,6 @@
 package com.study.jpa.chap05_practice.dto;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.study.jpa.chap05_practice.entity.HashTag;
 import com.study.jpa.chap05_practice.entity.Post;
 import lombok.*;
 
@@ -30,9 +29,10 @@ public class PostDetailResponseDTO { // dto는 응답 데이터와 대응되어�
         this.title = post.getTitle();
         this.content = post.getContent();
         this.regDate = post.getCreateDate();
-        this.hashTags = post.getHashTags().stream()
-                                            .map(ht->ht.getTagName())
-                                            .collect(Collectors.toList());
+        this.hashTags = post.getHashTags()
+                .stream()
+                .map(ht -> ht.getTagName())
+                .collect(Collectors.toList());
         // 태그 이름만 담아줌.
     }
 
