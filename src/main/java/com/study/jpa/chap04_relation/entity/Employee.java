@@ -26,7 +26,7 @@ public class Employee {
     // EAGER: 항상 무조건 조인을 수행.
     // LAZY: 필요한 경우에만 조인을 수행. (실무)
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "dept_id")
+    @JoinColumn(name = "dept_id") // Department에서 조인할 컬럼을 지정 (FK 있는 쪽에서 쓴다.)
     private Department department; // 사원은 자신이 속한 부서의 정보 가져야 한다.
 
 }

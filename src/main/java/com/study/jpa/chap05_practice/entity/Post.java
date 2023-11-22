@@ -16,7 +16,7 @@ import java.util.List;
 @Builder
 @Entity
 @Table(name = "tbl_post")
-public class Post {
+public class Post { // 엔티티는 데이터베이스와 대응되어야
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "post_no")
@@ -24,6 +24,9 @@ public class Post {
 
     @Column(nullable = false)
     private String writer; // 작성자
+
+    @Column(nullable = false)
+    private String title; // 제목
 
     private String content; // 내용
 
